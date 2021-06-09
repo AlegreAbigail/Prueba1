@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: postgres://kohhppspzgemny:36d2a8acf67002c452dfca2ee8ae07278b84283b0f9d8137ed7aeb5c3acc97a2@ec2-34-230-115-172.compute-1.amazonaws.com:5432/d135tobk24dlu7
+    username: kohhppspzgemny
+    password: 36d2a8acf67002c452dfca2ee8ae07278b84283b0f9d8137ed7aeb5c3acc97a2
+    initialization-mode: always
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      dialect: org.hibernate.dialect.PostgreSql10dialect
+  thymeleaf:
+    cache: false
+  mvc:
+     contentnegotiation:
+             media-types:
+                     pdf: application/pdf
+             favor-parameter: true
